@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import CodeInputPanel from "./components/CodeInputPanel";
+import LanguageSelector from "./components/LanguageSelector";
+import ReviewButton from "./components/ReviewButton";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          AI Code Reviewer
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-black text-white flex items-center justify-center gap-10">
+      <h1 className="text-5xl font-bold text-blue-500">
+        AI Code Reviewer
+      </h1>
+      <CodeInputPanel/>
+      <LanguageSelector/>
+      <ReviewButton/>
     </div>
   );
 }
