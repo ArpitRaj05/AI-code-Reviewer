@@ -1,4 +1,7 @@
-function LanguageSelector(){
+import { useState } from "react";
+
+function LanguageSelector({language,setLanguage}){
+    
     return (
         <>
             <select defaultValue="C++" className="text-black p-2 border rounded">
